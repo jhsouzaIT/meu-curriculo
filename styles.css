@@ -1,0 +1,147 @@
+/* Estilos Globais */
+body {
+    background: url('back4.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: sans-serif, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho e Navegação */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    overflow: hidden;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 10px 15px;
+    flex-grow: 1;
+    text-align: center;
+    max-width: 150px;
+}
+
+/* Links de Navegação */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    text-transform: uppercase; /* Tornar os links em maiúsculas */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao texto */
+}
+
+/* Efeito Hover nos Links de Navegação */
+nav ul li a:hover {
+    color: #8f8f8f; /* Muda a cor do texto ao passar o mouse */
+    
+}
+
+/* Seções */
+section {
+    padding: 70px 50px 50px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    
+}
+.pad {
+    padding: 5px;}
+/* Centraliza os títulos */
+.centered-title {
+    text-align: left;
+}
+
+/* Remove a lista padrão e centraliza a lista */
+.centered-list {
+    list-style-type: none; /* Remove as bolinhas */
+    padding: 0;
+    text-align: center; /* Alinha os itens no centro */
+}
+
+.centered-list li {
+    text-align: left; /* Faz os itens começarem da esquerda para direita */
+    margin-bottom: 5px; /* Adiciona um espaçamento entre os itens */
+}
+
+
+/* Botão */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #9c9c9c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.btn:hover {
+    background: #3b3b3b;}
+
+/* Foto de Perfil */
+.profile-photo {
+    display: block;
+    margin: 50px auto 20px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+/* Ajuste para dispositivos menores */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .profile-photo {
+        width: 250px;
+        height: 250px;
+    }
+
+    section {
+        padding-top: 180px;
+    }
+
+    /* Tamanho da fonte maior para visualização móvel */
+    nav ul li a {
+        font-size: 20px;
+    }
+}
